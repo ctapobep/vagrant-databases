@@ -12,8 +12,8 @@ Vagrant::Config.run do |config|
         :server_debian_password => "root"
       }
     })
-    chef.add_recipe "apt-get"
-    chef.add_recipe "openssl::default"
-1   chef.add_recipe "mysql::server"
+    chef.add_recipe("apt-get")
+    chef.add_recipe("openssl::default")
+    chef.add_recipe("mysql::server")
   end
 end
