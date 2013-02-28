@@ -15,5 +15,7 @@ Vagrant::Config.run do |config|
     chef.add_recipe("apt-get")
     chef.add_recipe("openssl::default")
     chef.add_recipe("mysql::server")
+    chef.add_recipe("postgresql::server")
+    chef.add_recipe("postgresql::client")
   end
 end

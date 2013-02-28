@@ -179,7 +179,7 @@ default['postgresql']['pg_hba'] = [
   {:type => 'host', :db => 'all', :user => 'all', :addr => '::1/128', :method => 'md5'}
 ]
 
-default['postgresql']['password'] = Hash.new
+default['postgresql']['password'] = 'postgres'
 
 default['postgresql']['enable_pitti_ppa'] = false
 default['postgresql']['enable_pgdg_yum'] = false
